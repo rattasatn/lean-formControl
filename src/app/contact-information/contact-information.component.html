@@ -1,0 +1,5 @@
+<div class="mt-4">
+    <p>Contact Information</p>
+    <input placeholder="Customer Name*" [formControl]="contactValidate" />
+    <p class="text-danger" *ngIf="contactValidate.invalid && contactValidate.touched">Please fill in customer name</p>
+</div>

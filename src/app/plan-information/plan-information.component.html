@@ -1,0 +1,18 @@
+<p>Plan Information</p>
+<input [formControl]="planValidate" placeholder="Subject*" />
+<p class="text-danger" *ngIf="planValidate.invalid && planValidate.touched">Please fill in subject</p>
+
+<p>Key Activity*</p>
+<div>
+    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+    <label class="btn btn-outline-secondary" for="btncheck1">Checkbox 1</label>
+
+    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+    <label class="btn btn-outline-secondary" for="btncheck2">Checkbox 2</label>
+
+    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+    <label class="btn btn-outline-secondary" for="btncheck3">Checkbox 3</label>
+
+</div>
+
+<p class="text-danger">Please choose one option</p>
